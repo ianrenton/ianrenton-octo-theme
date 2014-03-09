@@ -1,0 +1,19 @@
+<div id="header">
+        <div id="ianrenton"><div class="middle"><a href="http://ianrenton.com">Ian Renton</a></div></div><div class="arrow-right-1"></div><div id="site">
+        
+        {% if site.subtitle %}
+          <div class="top"><a href="{{ root_url }}/">{{ site.title }}</a></div><div class="bottom"><a href="{{ root_url }}/">{{ site.subtitle }}</a></div>
+        {% else %}
+          <div class="middle"><a href="{{ root_url }}/">{{ site.title }}</a></div>
+        {% endif %}
+        
+        </div><div class="arrow-right-2"></div><div id="page">
+        
+        {% if page.title && page.date %}
+          <div class="top">{{ page.title }}</div><div class="bottom">{% include post/date.html %}{{ time }}</div>
+        {% else %}
+          <div class="middle">{{ page.title }}</div>
+        {% endif %}
+        
+        </div>
+		</div>

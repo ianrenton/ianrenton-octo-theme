@@ -1,0 +1,250 @@
+html, body {
+  font-family: Georgia,"Bitstream Charter","Liberation Serif","Ubuntu Serif", serif;
+  line-height:1.4em;
+  font-size:17px;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color: #101010;
+  -webkit-font-smoothing: antialiased;
+}
+
+div#header {
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    font-size: 1.5em;
+    font-weight: 200;
+    font-family: "Segoe WP", "Segoe WP Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+}
+
+div#header div#ianrenton {
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+div#header div#ianrenton div.middle {
+    padding: 20px;
+    margin: 0;
+    height: 100%;
+}
+
+div#header div#ianrenton div.middle a {
+    color: white;
+    text-decoration: none;
+}
+
+div#header div.arrow-right-1 {
+  float: left;
+	width: 0; 
+	height: 0; 
+	border-top: 35px solid #1ba1e2;
+	border-bottom: 35px solid #1ba1e2;
+	border-left: 35px solid black;
+}
+
+div#header div#site {
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-color:#1ba1e2;
+}
+
+div#header div#site div.middle {
+    padding: 22px 20px 20px 20px;
+    margin: 0;
+    height: 100%;
+    color: white;
+}
+
+div#header div#site div.middle a {
+    color: white;
+    text-decoration: none;
+}
+
+div#header div#site div.top {
+    padding: 12px 20px 0 20px;
+    margin: 0;
+    color: white;
+}
+
+div#header div#site div.top a {
+    color: white;
+    text-decoration: none;
+}
+
+div#header div#site div.bottom {
+    padding: 0 20px 0 20px;
+    margin: 0;
+    color: white;
+    font-size: 0.8em;
+}
+
+div#header div#site div.bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+div#header div.arrow-right-2 {
+  float: left;
+	width: 0; 
+	height: 0; 
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent;
+	border-left: 35px solid #1ba1e2;
+}
+
+div#header div#page {
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+div#header div#page div.middle {
+    padding: 20px;
+    margin: 0;
+    height: 100%;
+    color: black;
+}
+
+div#header div#page div.middle a {
+    color: black;
+    text-decoration: none;
+}
+
+div#header div#page div.top {
+    padding: 12px 20px 0 20px;
+    margin: 0;
+    color: black;
+}
+
+div#header div#page div.top a {
+    color: black;
+    text-decoration: none;
+}
+
+div#header div#page div.bottom {
+    padding: 0.5em 20px 0 20px;
+    margin: 0;
+    color: gray;
+    font-size: 0.7em;
+    line-height: 1em;
+}
+
+div#header div#page div.bottom a {
+    color: gray;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  div#header div.arrow-right-1 {
+    display: none;
+  }
+  div#header div.arrow-right-2 {
+    display: none;
+  }
+}
+
+div#main {
+  width: 100%;
+  padding: 1em 0 2em 0;
+  clear: both;
+}
+
+div#main div#centre {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+  color: black;
+}
+
+code, pre {
+    background-color: #eeeeee;
+    font-family: monospace;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+img {
+  border: 0;
+}
+
+div#main div#centre p {
+    margin-bottom:1em;
+    font-size: 1.1em;
+}
+
+div#main div#centre p a {
+    color: #1ba1e2;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+div#main div#centre ul, div#main div#centre ol {
+    margin-bottom:1em;
+    font-size: 1.1em;
+}
+
+div#main div#centre ul a, div#main div#centre ol a {
+    color: #1ba1e2;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.juvia-container a {
+    color: #1ba1e2;
+    text-decoration: underline;
+}
+
+div#main div#sidebar {
+    float:right;
+    max-width: 15em;
+    margin: 0 0 0 4em;
+    padding: 0 1em;
+    background-color: #1ba1e2;
+    font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+    color: white;
+}
+
+div#main div#sidebar h2 {
+    margin-top: 1em;
+    color: white;
+}
+
+div#main div#sidebar a, div#main div#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+p.meta {
+    font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+    font-size: 0.8em;
+}
+
+footer {
+    padding-left: 2em;
+    font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+    font-size: 0.8em;
+    color: gray;
+}
+
+footer a {
+    color: #1ba1e2;
+    text-decoration: underline;
+}
+
+div.clear {
+    clear:both;
+}

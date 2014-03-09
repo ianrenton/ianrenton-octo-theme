@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div id="main">
+    {% unless page.sidebar == false %}
+    <div id="sidebar">
+      {% if site.post_asides.size %}
+        {% include_array post_asides %}
+      {% else %}
+        {% include_array default_asides %}
+      {% endif %}
+    </div>
+    {% endunless %}
+    <div id="centre">
+  <article role="article">
+    {{ content }}
+    {% unless page.footer == false %}
+      <footer>
+        {% unless page.sharing == false %}
+          {% include post/sharing.html %}
+        {% endunless %}
+      </footer>
+    {% endunless %}
+  </article>
+  {% if site.disqus_short_name and page.comments == true %}
+    <section>
+      <h1>Comments</h1>
+      <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+    </section>
+  {% endif %}
+  {% if site.juvia_site_key and page.comments == true %}
+    <section>
+      <h1>Comments</h1>
+      <div id="juvia_thread" aria-live="polite">{% include post/juvia_thread.html %}</div>
+    </section>
+  {% endif %}
+  </div>
+</div>
