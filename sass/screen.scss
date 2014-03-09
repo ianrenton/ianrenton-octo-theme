@@ -181,15 +181,21 @@ img {
   border: 0;
 }
 
+img.alignleft {
+    float: left;
+}
+
+img.alignright {
+    float: right;
+}
+
+td {
+    vertical-align: top;
+}
+
 div#main div#centre p {
     margin-bottom:1em;
     font-size: 1.1em;
-}
-
-div#main div#centre p a {
-    color: #1ba1e2;
-    text-decoration: underline;
-    white-space: nowrap;
 }
 
 div#main div#centre ul, div#main div#centre ol {
@@ -197,11 +203,18 @@ div#main div#centre ul, div#main div#centre ol {
     font-size: 1.1em;
 }
 
-div#main div#centre ul a, div#main div#centre ol a {
+div#main div#centre a, div#main div#centre p a, div#main div#centre ul a, div#main div#centre ol a, div#main div#centre table a {
     color: #1ba1e2;
     text-decoration: underline;
     white-space: nowrap;
 }
+
+div#notes, div#storynav {
+    padding: 0.5em 1em;
+    font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+    background-color: #eeeeee;
+}
+
 
 .juvia-container a {
     color: #1ba1e2;
@@ -231,6 +244,10 @@ div#main div#sidebar a, div#main div#sidebar ul li a {
 p.meta {
     font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
     font-size: 0.8em;
+}
+
+p.meta a.right {
+    float: right;
 }
 
 footer {
