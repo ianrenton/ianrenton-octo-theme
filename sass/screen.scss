@@ -164,8 +164,32 @@ div#main div#centre {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5em;
+  line-height: 1em;
   font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
   color: black;
+}
+
+h1.entry-title {
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 2em;
+  font-weight: 200;
+  font-family: "Segoe WP","Segoe WP Light","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,"FreeSans","Nimbus Sans L","Segoe UI",Arial,sans-serif;
+}
+
+h1.entry-title a {
+  color: black;
+  text-decoration: none;
+}
+
+p.entry-date {
+  margin-top: 0.5em;
+  font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+  color: gray;
+}
+
+article {
+  margin-bottom: 4em;
 }
 
 code, pre {
@@ -179,15 +203,13 @@ blockquote {
 
 img {
   border: 0;
+  max-width: 800px;
 }
 
-img.alignleft {
-    float: left;
-}
-
-img.alignright {
-    float: right;
-}
+.left, .alignleft { float: left; margin-right: 1.5em; }
+.right, .alignright { float: right; margin-left: 1.5em; }
+.center { display:block; margin: 0 auto 1.5em; }
+.left, .right { margin-bottom: .8em; }
 
 td {
     vertical-align: top;
@@ -203,7 +225,7 @@ div#main div#centre ul, div#main div#centre ol {
     font-size: 1.1em;
 }
 
-div#main div#centre a, div#main div#centre p a, div#main div#centre ul a, div#main div#centre ol a, div#main div#centre table a {
+div#main div#centre div a, div#main div#centre p a, div#main div#centre ul a, div#main div#centre ol a, div#main div#centre table a {
     color: #1ba1e2;
     text-decoration: underline;
     white-space: nowrap;
@@ -247,6 +269,20 @@ p.meta {
 }
 
 p.meta a.right {
+    float: right;
+}
+
+div.pagination {
+    font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+div.pagination a.prev {
+    float: left;
+}
+
+div.pagination a.next {
     float: right;
 }
 
