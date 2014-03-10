@@ -1,7 +1,12 @@
+$serif-fonts: Georgia,"Bitstream Charter","Liberation Serif","Ubuntu Serif", serif;
+$title-fonts: "Segoe WP", "Segoe WP Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+$sans-serif-fonts: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+$highlight-color: #1ba1e2;
+
 html, body {
-  font-family: Georgia,"Bitstream Charter","Liberation Serif","Ubuntu Serif", serif;
-  line-height:1.4em;
-  font-size:17px;
+  font-family: $serif-fonts;
+  line-height: 1.4em;
+  font-size: 17px;
   padding: 0;
   margin: 0;
   background-color: white;
@@ -9,163 +14,149 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-div#header {
+div {
+  &#header {
     margin: 0;
     width: 100%;
     height: 70px;
     font-size: 1.5em;
     font-weight: 200;
-    font-family: "Segoe WP", "Segoe WP Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
-}
-
-div#header div#ianrenton {
-    height: 100%;
-    float: left;
-    padding: 0;
-    margin: 0;
-    background-color: black;
-}
-
-div#header div#ianrenton div.middle {
-    padding: 20px;
-    margin: 0;
-    height: 100%;
-}
-
-div#header div#ianrenton div.middle a {
-    color: white;
-    text-decoration: none;
-}
-
-div#header div.arrow-right-1 {
-  float: left;
-	width: 0; 
-	height: 0; 
-	border-top: 35px solid #1ba1e2;
-	border-bottom: 35px solid #1ba1e2;
-	border-left: 35px solid black;
-}
-
-div#header div#site {
-    height: 100%;
-    float: left;
-    padding: 0;
-    margin: 0;
-    background-color:#1ba1e2;
-}
-
-div#header div#site div.middle {
-    padding: 22px 20px 20px 20px;
-    margin: 0;
-    height: 100%;
-    color: white;
-}
-
-div#header div#site div.middle a {
-    color: white;
-    text-decoration: none;
-}
-
-div#header div#site div.top {
-    padding: 12px 20px 0 20px;
-    margin: 0;
-    color: white;
-}
-
-div#header div#site div.top a {
-    color: white;
-    text-decoration: none;
-}
-
-div#header div#site div.bottom {
-    padding: 0 20px 0 20px;
-    margin: 0;
-    color: white;
-    font-size: 0.8em;
-}
-
-div#header div#site div.bottom a {
-    color: white;
-    text-decoration: none;
-}
-
-div#header div.arrow-right-2 {
-  float: left;
-	width: 0; 
-	height: 0; 
-	border-top: 35px solid transparent;
-	border-bottom: 35px solid transparent;
-	border-left: 35px solid #1ba1e2;
-}
-
-div#header div#page {
-    height: 100%;
-    float: left;
-    padding: 0;
-    margin: 0;
-    background-color: white;
-}
-
-div#header div#page div.middle {
-    padding: 20px;
-    margin: 0;
-    height: 100%;
-    color: black;
-}
-
-div#header div#page div.middle a {
-    color: black;
-    text-decoration: none;
-}
-
-div#header div#page div.top {
-    padding: 12px 20px 0 20px;
-    margin: 0;
-    color: black;
-}
-
-div#header div#page div.top a {
-    color: black;
-    text-decoration: none;
-}
-
-div#header div#page div.bottom {
-    padding: 0.5em 20px 0 20px;
-    margin: 0;
-    color: gray;
-    font-size: 0.7em;
-    line-height: 1em;
-}
-
-div#header div#page div.bottom a {
-    color: gray;
-    text-decoration: none;
+    font-family: $title-fonts;
+    div {
+      &#ianrenton {
+        height: 100%;
+        float: left;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        div.middle {
+          padding: 20px;
+          margin: 0;
+          height: 100%;
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      &.arrow-right-1 {
+        float: left;
+        width: 0;
+        height: 0;
+        border-top: 35px solid $highlight-color;
+        border-bottom: 35px solid $highlight-color;
+        border-left: 35px solid black;
+      }
+      &#site {
+        height: 100%;
+        float: left;
+        padding: 0;
+        margin: 0;
+        background-color: $highlight-color;
+        div {
+          &.middle {
+            padding: 22px 20px 20px 20px;
+            margin: 0;
+            height: 100%;
+            color: white;
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+          &.top {
+            padding: 12px 20px 0 20px;
+            margin: 0;
+            color: white;
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+          &.bottom {
+            padding: 0 20px 0 20px;
+            margin: 0;
+            color: white;
+            font-size: 0.8em;
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      &.arrow-right-2 {
+        float: left;
+        width: 0;
+        height: 0;
+        border-top: 35px solid transparent;
+        border-bottom: 35px solid transparent;
+        border-left: 35px solid $highlight-color;
+      }
+      &#page {
+        height: 100%;
+        float: left;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        div {
+          &.middle {
+            padding: 20px;
+            margin: 0;
+            height: 100%;
+            color: black;
+            a {
+              color: black;
+              text-decoration: none;
+            }
+          }
+          &.top {
+            padding: 12px 20px 0 20px;
+            margin: 0;
+            color: black;
+            a {
+              color: black;
+              text-decoration: none;
+            }
+          }
+          &.bottom {
+            padding: 0.5em 20px 0 20px;
+            margin: 0;
+            color: gray;
+            font-size: 0.7em;
+            line-height: 1em;
+            a {
+              color: gray;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  &#main {
+    width: 100%;
+    padding: 1em 0 2em 0;
+    clear: both;
+    div#centre {
+      max-width: 800px;
+      margin: 0 auto 0 auto;
+    }
+  }
 }
 
 @media (max-width: 500px) {
-  div#header div.arrow-right-1 {
-    display: none;
+  div#header div {
+    &.arrow-right-1, &.arrow-right-2 {
+      display: none;
+    }
   }
-  div#header div.arrow-right-2 {
-    display: none;
-  }
-}
-
-div#main {
-  width: 100%;
-  padding: 1em 0 2em 0;
-  clear: both;
-}
-
-div#main div#centre {
-    max-width: 800px;
-    margin: 0 auto 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5em;
   line-height: 1em;
-  font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+  font-family: $sans-serif-fonts;
   color: black;
 }
 
@@ -174,17 +165,16 @@ h1.entry-title {
   margin-bottom: 0;
   font-size: 2em;
   font-weight: 200;
-  font-family: "Segoe WP","Segoe WP Light","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,"FreeSans","Nimbus Sans L","Segoe UI",Arial,sans-serif;
-}
-
-h1.entry-title a {
-  color: black;
-  text-decoration: none;
+  font-family: $title-fonts;
+  a {
+    color: black;
+    text-decoration: none;
+  }
 }
 
 p.entry-date {
   margin-top: 0.5em;
-  font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+  font-family: $sans-serif-fonts;
   color: gray;
 }
 
@@ -193,12 +183,12 @@ article {
 }
 
 code, pre {
-    background-color: #eeeeee;
-    font-family: monospace;
+  background-color: #eeeeee;
+  font-family: monospace;
 }
 
 blockquote {
-    font-style: italic;
+  font-style: italic;
 }
 
 img {
@@ -206,98 +196,200 @@ img {
   max-width: 800px;
 }
 
-.left, .alignleft { float: left; margin-right: 1.5em; }
-.right, .alignright { float: right; margin-left: 1.5em; }
-.center { display:block; margin: 0 auto 1.5em; }
-.left, .right { margin-bottom: .8em; }
+.left, .alignleft {
+  float: left;
+  margin-right: 1.5em;
+}
+
+.right, .alignright {
+  float: right;
+  margin-left: 1.5em;
+}
+
+.center {
+  display: block;
+  margin: 0 auto 1.5em;
+}
+
+.left, .right {
+  margin-bottom: .8em;
+}
 
 td {
-    vertical-align: top;
+  vertical-align: top;
 }
 
-div#main div#centre p {
-    margin-bottom:1em;
-    font-size: 1.1em;
-}
-
-div#main div#centre ul, div#main div#centre ol {
-    margin-bottom:1em;
-    font-size: 1.1em;
-}
-
-div#main div#centre div a, div#main div#centre p a, div#main div#centre ul a, div#main div#centre ol a, div#main div#centre table a {
-    color: #1ba1e2;
-    text-decoration: underline;
-    white-space: nowrap;
-}
-
-div#notes, div#storynav {
+div {
+  &#main div#centre {
+    p, ul, ol {
+      margin-bottom: 1em;
+    }
+    div a, p a, ul a, ol a, table a {
+      color: $highlight-color;
+      text-decoration: underline;
+      white-space: nowrap;
+    }
+  }
+  &.entry-content {
+    margin-bottom: 4em;
+  }
+  &#notes, &#storynav {
     padding: 0.5em 1em;
-    font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
+    font-family: $sans-serif-fonts;
     background-color: #eeeeee;
+  }
 }
-
 
 .juvia-container a {
-    color: #1ba1e2;
-    text-decoration: underline;
+  color: $highlight-color;
+  text-decoration: underline;
 }
 
 div#main div#sidebar {
-    float:right;
-    max-width: 15em;
-    margin: 0 0 0 4em;
-    padding: 0 1em;
-    background-color: #1ba1e2;
-    font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
-    color: white;
-}
-
-div#main div#sidebar h2 {
+  float: right;
+  max-width: 15em;
+  margin: 0 0 0 4em;
+  padding: 0 1em;
+  background-color: $highlight-color;
+  font-family: $sans-serif-fonts;
+  color: white;
+  h2 {
     margin-top: 1em;
     color: white;
-}
-
-div#main div#sidebar a, div#main div#sidebar ul li a {
+  }
+  a, ul li a {
     color: white;
     text-decoration: none;
+  }
 }
 
 p.meta {
-    font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
-    font-size: 0.8em;
-}
-
-p.meta a.right {
-    float: right;
+  height: 2em;
+  font-size: 1em;
+  font-family: $sans-serif-fonts;
+  a {
+    padding: 0.3em;
+    background-color: $highlight-color !important;
+    color: white !important;
+    text-decoration: none !important;
+    &.right {
+      float: right;
+    }
+  }
 }
 
 div.pagination {
-    font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
-    font-size: 0.8em;
-    text-align: center;
-}
-
-div.pagination a.prev {
-    float: left;
-}
-
-div.pagination a.next {
-    float: right;
+  height: 2em;
+  font-family: $sans-serif-fonts;
+  font-size: 1em;
+  text-align: center;
+  a {
+    padding: 0.3em;
+    background-color: $highlight-color !important;
+    color: white !important;
+    text-decoration: none !important;
+    &.prev {
+      float: left;
+    }
+    &.next {
+      float: right;
+    }
+  }
 }
 
 footer {
-    padding-left: 2em;
-    font-family: "Helvetica Neue", Helvetica, "Ubuntu", "FreeSans", "Nimbus Sans L", "Segoe UI", Arial, sans-serif;
-    font-size: 0.8em;
-    color: gray;
-}
-
-footer a {
-    color: #1ba1e2;
+  padding-left: 2em;
+  font-family: $sans-serif-fonts;
+  font-size: 0.8em;
+  color: gray;
+  a {
+    color: $highlight-color;
     text-decoration: underline;
+  }
 }
 
 div.clear {
-    clear:both;
+  clear: both;
+}
+
+
+
+
+/**************************************
+ * Jonjoe's Sharing-Buttons
+ *************************************/
+ 
+$facebook:    #3b5998;
+$twitter:        #23abf2;
+$google:        #c7392c;
+$linkdIn:        #007bb6;
+
+@mixin setBgColorAndHover($theColor) {
+    background-color: $theColor;
+    &:hover {
+          background-color: darken($theColor, 15%);
+    }
+}
+
+.sharing-buttons {
+	a {
+		display:table;
+		float:left;
+		text-decoration: none !important;
+		transition:background 1s;
+		// border:1px solid black;
+		&:hover {
+			text-decoration: none;
+		}
+		&:nth-child(1) { /*Twitter Button*/
+			// border-radius: 10px 0 0 10px;
+			background:$twitter;
+			&:hover{
+				@include setBgColorAndHover($twitter);
+			}
+		}
+		&:nth-child(2) { /*Facebook Button*/
+			background:$facebook;
+			&:hover{
+				@include setBgColorAndHover($facebook);
+			}
+		}
+		&:nth-child(3) { /*Google Button*/
+			background:$google;
+			&:hover{
+				@include setBgColorAndHover($google);
+			}
+		}
+		&:nth-child(4) { /*Linkdin Button*/
+			// border-radius:  0 10px 10px 0;
+			background:$linkdIn;
+			&:hover{
+				@include setBgColorAndHover($linkdIn);
+			}
+		}
+		p   {
+			text-align:center;
+			display: table-cell;
+			vertical-align: middle;
+			color:white;
+			font-weight:500;
+			-webkit-font-smoothing: antialiased;
+			font-family: $sans-serif-fonts;
+			font-size: 14px;
+			font-weight: 200;
+			line-height: 1.5;
+		}
+	}
+}
+
+
+.sharing-buttons.horiz {
+	width:400px;
+	height:40px;
+	margin:20px auto;
+	a {
+		height:100%;
+		width:24%;
+		// margin:0 0.5px;
+	}
 }
