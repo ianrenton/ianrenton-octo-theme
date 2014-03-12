@@ -221,6 +221,7 @@ td {
 
 div {
   &#main div#centre {
+    font-size: 1.1em;
     p, ul, ol {
       margin-bottom: 1em;
     }
@@ -298,13 +299,15 @@ div.pagination {
 }
 
 footer {
-  padding-left: 2em;
   font-family: $sans-serif-fonts;
   font-size: 0.8em;
   color: gray;
   a {
     color: $highlight-color;
     text-decoration: underline;
+  }
+  p.copyright {
+    padding-left: 2em;
   }
 }
 
