@@ -262,6 +262,10 @@ div#main div#sidebar {
     color: white;
     text-decoration: none;
   }
+  @media (max-width: 800px) {
+    display:none;
+  }
+
 }
 
 p.meta {
